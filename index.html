@@ -1,11 +1,34 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <style>
+     .chart div {
+       font: 10px sans-serif;
+       background-color: red;
+       text-align: right;
+       padding: 3px;
+       margin: 1px;
+       color: white;
+     }
+   </style>
     <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
   </head>
   <body>
-    <div class="chart">
+    <h1> United States Revenue in Dollars (Billion) <div id="year">2008</div></h1>
+    <p style="display:inline-block;"> Payroll Taxes
+      <br>
+      Corporate Income Taxes
+      <br>
+      Excise Taxes
+      <br>
+      Other Taxes
+      <br>
+      Individual Income Taxes
+    </p>
+    <div class="chart" style="display:inline-block;">
     </div>
+    <br>
+    <button id="toggle"> Change Year </button>
   </body>
   <script src="script.js"> </script>
 </html>
